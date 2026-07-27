@@ -1,0 +1,9 @@
+mkdir is used to create a new folder
+ls -la it is used to see all the files
+pwd it is used to print the working directory location
+cd this is used to change directory
+touch this is used to make new files 
+vi or vim filename this will open a text editor(every time this command can open the editor even after exiting)
+rm this is used to remove the files in a folder
+tree -L2 this is used to see the file flow
+rmdir this is used to delete the folder 
