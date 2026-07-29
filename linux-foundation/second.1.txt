@@ -6,4 +6,20 @@ touch this is used to make new files
 vi or vim filename this will open a text editor(every time this command can open the editor even after exiting)
 rm this is used to remove the files in a folder
 tree -L2 this is used to see the file flow
-rmdir this is used to delete the folder 
+rmdir this is used to delete the folder
+cp Copy files or directories
+mv Move or rename files
+find  Search for files by name, type, time, size
+locate Fast file search using an index
+ln Create hard/symbolic links
+basename/dirname Extract filename or directory from a path
+stat  Show detailed file metadata
+cat  Print file contents
+less  View file page-by-page (scrollable)
+more View file page-by-page (older, simpler)
+head  Show first N lines of a file
+tail Show last N lines / follow live updates
+diff Compare two files line by line
+wc  Count lines, words, characters
+file Detect file type
+ 
