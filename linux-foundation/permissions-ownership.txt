@@ -38,3 +38,49 @@ g=group
 in tht cli it will be like
 r=read,w=write,x=execute
 r=4,w=2,x=1,-=0.
+
+UMASK – IMPORTANT NOTES
+
+umask = NEW file/folder ki default permissions ko BLOCK karta hai.
+
+Check:
+umask
+Example: 0022
+
+Pattern:
+umask ABC
+A = Owner
+B = Group
+C = Others
+
+Values:
+4 = Read block
+2 = Write block
+1 = Execute block
+0 = Nothing block
+
+Base Permission:
+New File      = 666
+New Directory = 777
+
+Formula:
+File      → 666 - umask
+Directory → 777 - umask
+
+Common:
+
+umask 022
+→ File      = 644 (rw-r--r--)
+→ Directory = 755 (rwxr-xr-x)
+
+umask 077
+→ File      = 600 (rw-------)
+→ Directory = 700 (rwx------)
+
+umask 002
+→ File      = 664 (rw-rw-r--)
+→ Directory = 775 (rwxrwxr-x)
+
+Remember:
+chmod → Existing permission CHANGE
+umask → New permission BLOCK
