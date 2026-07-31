@@ -1,0 +1,40 @@
+COMMONLY USED NUMERICAL PERMISSIONS
+
+777 = rwxrwxrwx
+     → Owner, Group aur Others ko full permission.
+     → Read + Write + Execute for everyone.
+     → Generally avoid unless specifically required.
+
+755 = rwxr-xr-x
+     → Owner: Full access
+     → Group: Read + Execute
+     → Others: Read + Execute
+     → Commonly used for executable files/directories.
+
+700 = rwx------
+     → Owner: Full access
+     → Group: No access
+     → Others: No access
+     → Private files/directories ke liye useful.
+
+644 = rw-r--r--
+     → Owner: Read + Write
+     → Group: Read only
+     → Others: Read only
+     → Normal files ke liye very commonly used.
+
+600 = rw-------
+     → Owner: Read + Write
+     → Group: No access
+     → Others: No access
+     → Private/sensitive files ke liye useful.
+
+444 = r--r--r--
+     → Owner, Group aur Others: Read only
+     → Kisi ko Write/Execute permission nahi
+u=owner 
+o=other
+g=group
+in tht cli it will be like
+r=read,w=write,x=execute
+r=4,w=2,x=1,-=0.
