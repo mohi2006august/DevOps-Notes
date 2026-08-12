@@ -1,0 +1,6 @@
+toh grep se files ke andar search kar sakte hai 
+grep -i se case sensitiveness ko ignore kar sakte hai
+grep -v se jo name/data search hogaya ho usko hata sakte hai aur command mai voh exist nhi karega 
+but file mai voh rahega usko kuch assignment/output nhi milega
+grep -r se recursively saara folder mai hi search karsakte hai 
+grep -E mai multiple chizon ko search karsakte hai using OR operator
